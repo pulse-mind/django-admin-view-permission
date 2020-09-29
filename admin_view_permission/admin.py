@@ -223,8 +223,8 @@ class AdminViewPermissionBaseModelAdmin(admin.options.BaseModelAdmin):
 
         can_delete = self.has_delete_permission(request)
 
-        #if not can_delete and 'delete_selected' in actions:
-        #    del actions['delete_selected']
+        # if not can_delete and 'delete_selected' in actions:
+        #     del actions['delete_selected']
 
         if self._has_change_only_permission(request):
             return actions
